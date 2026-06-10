@@ -1,0 +1,14 @@
+name: 字符串
+name1: '字符串'
+name2: "字符串" # 这三种字符串都可以
+age: 21
+isGender: true
+isGender1: True  # 两种bool都可以
+arr1: [1,2,3]
+arr2:
+  - 1
+  - 2
+  - 3 # 两种数组都可以
+obj2: 
+  name: fengfeng
+  age: 12
