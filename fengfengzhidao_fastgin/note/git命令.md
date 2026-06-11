@@ -1,3 +1,4 @@
+先在本地做前三步，然后在github上创建新repo，再做第四第五步
 1. git init
 2. git add
 3. git commit -m
