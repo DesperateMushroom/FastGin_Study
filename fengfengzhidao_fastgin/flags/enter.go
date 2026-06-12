@@ -2,7 +2,6 @@ package flags
 
 import (
 	"flag"
-	"fmt"
 )
 
 // 创建一个结构体保存从命令行里传入的值
@@ -19,5 +18,5 @@ func Run() {
 	// param3：如果不传入的默认值
 	flag.StringVar(&Options.File, "f", "settings_dev.yaml", "config file path")
 	flag.Parse()
-	fmt.Println(Options.File)
+	// fmt.Println(Options.File)
 }

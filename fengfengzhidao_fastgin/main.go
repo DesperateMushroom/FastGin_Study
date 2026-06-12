@@ -4,8 +4,6 @@ import (
 	"fengfengzhidao_fastgin/core"
 	"fengfengzhidao_fastgin/flags"
 	"fengfengzhidao_fastgin/global"
-
-	"github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -17,9 +15,9 @@ func main() {
 	// fmt.Println(global.Config.DB)
 	// core.DumpConfig() //将修改的配置参数写入settings
 
-	logrus.Debugf("hello")
-	logrus.Infof("hello")
-	logrus.Warnf("hello")
-	logrus.Errorf("hello")
+	// logrus.Debugf("hello")
+	// logrus.Infof("hello")
+	// logrus.Warnf("hello")
+	// logrus.Errorf("hello")
 
 }
