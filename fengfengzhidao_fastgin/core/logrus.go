@@ -103,7 +103,7 @@ func (hook *MyHook) Fire(entry *logrus.Entry) error {
 	}
 	hook.file.Write([]byte(msg))
 
-	fmt.Println(entry)
+	// fmt.Println(entry)
 	return nil
 }
 

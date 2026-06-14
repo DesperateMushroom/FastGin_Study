@@ -11,6 +11,8 @@ func main() {
 	flags.Run()
 	// cfg := core.ReadConfig() // 赋值给全局变量，这样就可以动态更新配置
 	global.Config = core.ReadConfig()
+	global.DB = core.InitGorm()
+
 	// global.Config.DB.User = "root" //代码中修改settings配置参数
 	// fmt.Println(global.Config.DB)
 	// core.DumpConfig() //将修改的配置参数写入settings
