@@ -19,7 +19,7 @@ func ReadConfig() (cfg *config.Config) {
 		return
 	}
 	// 可以用map接，或者别的结构体
-	err = yaml.Unmarshal(byteData, cfg)
+	err = yaml.Unmarshal(byteData, cfg) //将配置文件里的值读取进cfg里，这样程序就可以使用配置文件了
 	if err != nil {
 		logrus.Fatalf("配置文件格式错误 %s", err)
 		return
