@@ -24,9 +24,7 @@ func main() {
 	// logrus.Warnf("hello")
 	// logrus.Errorf("hello")
 
-	if flags.Run() {
-		return
-	}
+	flags.Run()
 
 	// 网络监听
 	fmt.Println("web监听")
