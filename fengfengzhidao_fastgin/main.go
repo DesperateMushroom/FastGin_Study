@@ -4,11 +4,12 @@ import (
 	"fengfengzhidao_fastgin/core"
 	"fengfengzhidao_fastgin/flags"
 	"fengfengzhidao_fastgin/global"
+	"fmt"
 )
 
 func main() {
 	core.InitLogger()
-	flags.Run()
+	flags.Parse() // 先parse再run
 	// cfg := core.ReadConfig() // 赋值给全局变量，这样就可以动态更新配置
 	global.Config = core.ReadConfig()
 	global.DB = core.InitGorm()
@@ -22,5 +23,12 @@ func main() {
 	// logrus.Infof("hello")
 	// logrus.Warnf("hello")
 	// logrus.Errorf("hello")
+
+	if flags.Run() {
+		return
+	}
+
+	// 网络监听
+	fmt.Println("web监听")
 
 }
